@@ -1,0 +1,26 @@
+package habilidades;
+
+import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class brunico extends JFrame implements ActionListener{
+	
+	public b
+	//Edição da Tela
+	public void editarTela() {
+		setTitle("Viking");
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setLayout(null);
+		setResizable(false);
+		setSize(465,119);
+		setLocation(400,200);
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}

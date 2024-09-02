@@ -1,0 +1,17 @@
+package br.com.cod3r.exerciciossb.controllers;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.cod3r.exerciciossb.model.entities.Produto;
+
+@RestController
+public class ProdutoController {
+
+	@PostMapping
+	public Produto novoProduto(String nome) {
+		Produto produto = new Produto(nome);
+		
+		return produto;
+	}
+}

@@ -1,0 +1,147 @@
+package habilidades;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+import turnos.telaTurnos;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class viking extends JFrame implements ActionListener {
+	//Declaração de Variáveis
+	public static String nomeHabilidade;
+	int mpHabilidade;
+	public static int tempoHabilidade;
+	
+	//Criação dos Buttons
+	JButton skill1 = new JButton("Fúria de Ragnarok");
+	JButton skill2 = new JButton("Grito Atormentador");
+	JButton skill3 = new JButton("Sede por Sangue");
+	JButton skill4 = new JButton("Grito do Viking");
+	JButton skill5 = new JButton("POR LOCKFAARRR");
+	JButton skill6 = new JButton("Fúria de Ragnarok");
+	JButton skill7 = new JButton("Fúria de Ragnarok");
+	
+	//Construtores
+	public viking(String teste) {
+		editarTela();
+		editarButton();
+	}
+	
+	public viking() {
+		
+	}
+	
+	//Edição dos Buttons
+	public void editarButton() {
+		skill1.setVisible(true);
+		skill1.setBounds(0,0, 150, 40);
+		skill1.addActionListener(this);
+		add(skill1);
+		
+		skill2.setVisible(true);
+		skill2.setBounds(150,0, 150, 40);
+		skill2.addActionListener(this);
+		add(skill2);
+		
+		skill3.setVisible(true);
+		skill3.setBounds(300,0, 150, 40);
+		skill3.addActionListener(this);
+		add(skill3);
+		
+		skill4.setVisible(true);
+		skill4.setBounds(0,40, 150, 40);
+		skill4.addActionListener(this);
+		add(skill4);
+		
+		skill5.setVisible(true);
+		skill5.setBounds(150,40, 150, 40);
+		skill5.addActionListener(this);
+		add(skill5);
+		
+	}
+	
+	//Edição da Tela
+	public void editarTela() {
+		setTitle("Viking");
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setLayout(null);
+		setResizable(false);
+		setSize(465,119);
+		setLocation(400,200);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new viking("Teste");
+	}
+	// Ação dos Buttons
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == skill1) {
+			telaTurnos puxador2 = new telaTurnos("Teste");
+			
+			esbocoHabilidades puxador = new esbocoHabilidades("Fúria de Ragnarok", 2, 18);
+			nomeHabilidade = puxador.nome;
+			mpHabilidade = puxador.mp;
+			tempoHabilidade = puxador.tempoRecarga;
+			
+			puxador2.verificacaoSkills();
+			puxador2.verificacaoTurnos();
+			puxador2.ordernarSkills();
+		}
+		
+		if (e.getSource() == skill2) {
+			telaTurnos puxador2 = new telaTurnos("Teste");
+			
+			esbocoHabilidades puxador = new esbocoHabilidades("Grito Atormentador", 5, 22);
+			nomeHabilidade = puxador.nome;
+			mpHabilidade = puxador.mp;
+			tempoHabilidade = puxador.tempoRecarga;
+			
+			puxador2.verificacaoSkills();
+			puxador2.verificacaoTurnos();
+			puxador2.ordernarSkills();
+		}
+		
+		if (e.getSource() == skill3) {
+			telaTurnos puxador2 = new telaTurnos("Teste");
+			
+			esbocoHabilidades puxador = new esbocoHabilidades("Sede por Sangue", 10, 22);
+			nomeHabilidade = puxador.nome;
+			mpHabilidade = puxador.mp;
+			tempoHabilidade = puxador.tempoRecarga;
+			
+			puxador2.verificacaoSkills();
+			puxador2.verificacaoTurnos();
+			puxador2.ordernarSkills();
+		}
+		
+		if (e.getSource() == skill4) {
+			telaTurnos puxador2 = new telaTurnos("Teste");
+			
+			esbocoHabilidades puxador = new esbocoHabilidades("Grito do Viking", 13, 25);
+			nomeHabilidade = puxador.nome;
+			mpHabilidade = puxador.mp;
+			tempoHabilidade = puxador.tempoRecarga;
+			
+			puxador2.verificacaoSkills();
+			puxador2.verificacaoTurnos();
+			puxador2.ordernarSkills();
+		}
+		
+		if (e.getSource() == skill5) {
+			telaTurnos puxador2 = new telaTurnos("Teste");
+			
+			esbocoHabilidades puxador = new esbocoHabilidades("POR LOCKFAARRR", 23, 40);
+			nomeHabilidade = puxador.nome;
+			mpHabilidade = puxador.mp;
+			tempoHabilidade = puxador.tempoRecarga;
+			
+			puxador2.verificacaoSkills();
+			puxador2.verificacaoTurnos();
+			puxador2.ordernarSkills();
+		}
+	}
+	
+}

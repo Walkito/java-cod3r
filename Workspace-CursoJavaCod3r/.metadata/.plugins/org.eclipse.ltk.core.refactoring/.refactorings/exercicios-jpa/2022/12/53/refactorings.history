@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;modelo.consulta.NovaFilme&apos; to &apos;NotaFilme&apos;&#x0D;&#x0A;- Original project: &apos;exercicios-jpa&apos;&#x0D;&#x0A;- Original element: &apos;modelo.consulta.NovaFilme&apos;&#x0D;&#x0A;- Renamed element: &apos;modelo.consulta.NotaFilme&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NovaFilme&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;modelo.consulta{NovaFilme.java[NovaFilme" matchStrategy="1" name="NotaFilme" qualified="false" references="true" similarDeclarations="false" stamp="1672243925681" textual="false" version="1.0"/>
+</session>

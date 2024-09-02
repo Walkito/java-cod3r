@@ -1,0 +1,15 @@
+package jdbc;
+
+import java.sql.Connection;
+
+public class TesteConexao {
+	
+	public static void main(String[] args) {
+		
+		final String stringDeConexao = "jdbc:mysql://localhost:3306";
+		final String usuario = "root";
+		final String senha = "123456";
+		
+		Connection
+	}
+}
